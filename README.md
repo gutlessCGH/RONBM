@@ -1,5 +1,8 @@
 # Refind OLED No Blind Me
 
+A less bright theme for the Refind Boot Manager
+
+![Preview](preview.jpg)
 
 ### Installation
 
