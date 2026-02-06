@@ -6,6 +6,7 @@ A less bright theme for the Refind Boot Manager
 
 Icons for 50+ distros are included. There are additional, even more minimalist icons for some distros that can be paired with a BTRFS snapshot.
 
+![Icon Preview](icons.jpg)
 
 ### Installation
 
