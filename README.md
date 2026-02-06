@@ -6,7 +6,7 @@
 Copy the theme folder to a `themes` directory inside the refind EFI directory (usually `/boot/EFI/refind`)
 >
 
-	Example                                                   (right click to open terminal in downloads folder)
+	**Example**                                               (right click to open terminal in downloads folder)
 	sudo mkdir /boot/EFI/refind/themes                        (ignore command or error if directory exists)
 	sudo cp -r ./RONBM /boot/EFI/refind/themes/RONBM
 
