@@ -4,16 +4,16 @@
 ### Installation
 
 Copy the theme folder to a `themes` directory inside the refind EFI directory (usually `/boot/EFI/refind`)
+>
 
->Example                                                   (right click to open terminal in downloads folder)
-
->sudo mkdir /boot/EFI/refind/themes                        (ignore command or error if directory exists)
-
->sudo cp -r ./RONBM /boot/EFI/refind/themes/RONBM
+	Example                                                   (right click to open terminal in downloads folder)
+	sudo mkdir /boot/EFI/refind/themes                        (ignore command or error if directory exists)
+	sudo cp -r ./RONBM /boot/EFI/refind/themes/RONBM
 
 Then add `include themes/RONBM/theme.conf` at the end of /boot/EFI/refind/refind.conf
+>
 
->sudo nano /boot/EFI/refind/refind.conf                    (ctrl+u to paste, ctrl+s to save, ctrl+x to exit)
+	sudo nano /boot/EFI/refind/refind.conf                    (ctrl+u to paste, ctrl+s to save, ctrl+x to exit)
 
 
 ### Customization
