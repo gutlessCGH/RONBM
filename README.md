@@ -4,6 +4,7 @@ A less bright theme for the Refind Boot Manager
 
 ![Preview](preview.jpg)
 
+
 ### Installation
 
 Copy the theme folder to a `themes` directory inside the refind EFI directory (usually `/boot/EFI/refind`)
