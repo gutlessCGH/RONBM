@@ -27,6 +27,8 @@ Open /RONBM/theme.conf and follow directions to edit:
 * Timeout before automatic boot
 * Maximum number of icons shown
 * Icon size
+* Show/hide labels (shown by default)
+* Show/hide hints (hidden by default)
 
 May want to resize background.png to monitor resolution. There is an activity dot in the top right corner (doesn't really serve any practical purpose) that can be kept or cropped out.
 
