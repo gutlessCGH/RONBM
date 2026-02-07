@@ -4,18 +4,18 @@ A less bright theme for the Refind Boot Manager
 
 ![Preview](preview.jpg)
 
-Icons for 50+ distros are included. There are additional, even more minimalist icons for some distros that can be paired with a BTRFS snapshot.
+Large icons for 50+ distros are included. There are additional, even more minimalist icons for some distros that can be paired with a Btrfs snapshot.
 
 ![Icon Preview](icons.jpg)
 
 ### Installation
 
 Copy the theme folder to a `themes` directory inside the refind EFI directory (usually `/boot/EFI/refind`)
->
 
-	**Example**                                               (right click to open terminal in downloads folder)
+**Example**
+>                                               
 	sudo mkdir /boot/EFI/refind/themes                        (ignore command or error if directory exists)
-	sudo cp -r ./RONBM /boot/EFI/refind/themes/RONBM
+	sudo cp -r ./RONBM /boot/EFI/refind/themes/RONBM		  (right click to open terminal in downloads folder)
 
 Then add `include themes/RONBM/theme.conf` at the end of /boot/EFI/refind/refind.conf
 >
@@ -27,21 +27,22 @@ Then add `include themes/RONBM/theme.conf` at the end of /boot/EFI/refind/refind
 
 Open /RONBM/theme.conf and follow directions to edit:
 
+* Show/hide label text (shown by default, this is the text in the preview)
+* Show/hide hints (hidden by default, additional text at the bottom of the screen)
+* Indicator style (there are two additional sets of indicator images, flat geometric & HUD)
+* Icon size (256px default size relatively large for refind, but not very big on a HiDPI monitor)
+* Maximum number of icons shown (default 7 should fit like the preview on a 1080p monitor)
 * Timeout before automatic boot
-* Maximum number of icons shown
-* Icon size
-* Show/hide labels (shown by default)
-* Show/hide hints (hidden by default)
 
 May want to resize background.png to monitor resolution. There is an activity dot in the top right corner (doesn't really serve any practical purpose) that can be kept or cropped out.
 
-### Icons
+### Setting Custom Icons
 
 If the specific icon isn't automatically applied for a distro, the easiest solution is just to rename the correct one to os_linux.png or os_unknown.png. 
 
 More extensive fixes can be done by adding a boot stanza to /boot/EFI/refind/refind.conf
 
-### Example
+**Example**
 >
 
 	menuentry " ****** " {                                      (replace ****** with OS name)
