@@ -29,10 +29,12 @@ Open /RONBM/theme.conf and follow directions to edit:
 
 * Show/hide label text (shown by default, this is the text in the preview)
 * Show/hide hints (hidden by default, additional text at the bottom of the screen)
-* Indicator style (there are two additional sets of indicator images, flat geometric & HUD)
 * Icon size (256px default size relatively large for refind, but not very big on a HiDPI monitor)
 * Maximum number of icons shown (default 7 should fit like the preview on a 1080p monitor)
 * Timeout before automatic boot
+* Indicator style (there are four sets of indicator images)
+
+![Indicators Preview](indicators.jpg)
 
 May want to resize background.png to monitor resolution. There is an activity dot in the top right corner (doesn't really serve any practical purpose) that can be kept or cropped out.
 
