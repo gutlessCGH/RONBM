@@ -32,7 +32,7 @@ Open /RONBM/theme.conf and follow directions to edit:
 * Icon size (256px default size relatively large for refind, but not very big on a HiDPI monitor)
 * Maximum number of icons shown (default 7 should fit like the preview on a 1080p monitor)
 * Timeout before automatic boot
-* Indicator style (there are four sets of indicator images)
+* Indicator style (there are four sets of indicator images to choose from)
 
 ![Indicators Preview](indicators.jpg)
 
