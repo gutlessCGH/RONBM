@@ -35,7 +35,11 @@ Open /RONBM/theme.conf and follow directions to edit:
 
 May want to resize background.png to monitor resolution. There is an activity dot in the top right corner (doesn't really serve any practical purpose) that can be kept or cropped out.
 
-To apply a specific icon for some distros it may be necessary to add a boot stanza to /boot/EFI/refind/refind.conf
+### Icons
+
+If the specific icon isn't automatically applied for a distro, the easiest solution is just to rename the correct one to os_linux.png or os_unknown.png. 
+
+More extensive fixes can be done by adding a boot stanza to /boot/EFI/refind/refind.conf
 
 ### Example
 >
@@ -47,5 +51,5 @@ To apply a specific icon for some distros it may be necessary to add a boot stan
 	    options "quiet ******"                                  (replace "quiet ******" with boot options)
 	    }
     
-Boot options may be found in refind_linux.conf (sudo nano /boot/refind_linux.conf).   Copy the long string in quotes after "Boot with standard options"
+Boot options may be found in refind_linux.conf (sudo nano /boot/refind_linux.conf).   After booting into an OS copy the long string in quotes after "Boot with standard options"
 
