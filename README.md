@@ -36,8 +36,6 @@ Open /RONBM/theme.conf and follow directions to edit:
 
 ![Indicators Preview](indicators.jpg)
 
-May want to resize background.png to monitor resolution. There is an activity dot in the top right corner (doesn't really serve any practical purpose) that can be kept or cropped out.
-
 ### Setting Custom Icons
 
 If the specific icon isn't automatically applied for a distro, the easiest solution is just to rename the correct one to os_linux.png or os_unknown.png. 
