@@ -43,8 +43,6 @@ If the specific icon isn't automatically applied for a distro, the easiest solut
 
 More extensive fixes can be done by adding a boot stanza to /boot/EFI/refind/refind.conf
 
-Entries can be hidden in Refind by pressing the 'delete' key.
-
 **Example**
 >
 
@@ -57,3 +55,4 @@ Entries can be hidden in Refind by pressing the 'delete' key.
     
 Boot options may be found in refind_linux.conf (sudo nano /boot/refind_linux.conf).   After booting into an OS copy the long string in quotes after "Boot with standard options"
 
+Entries can be hidden in Refind by pressing the 'delete' key.
