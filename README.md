@@ -4,7 +4,7 @@ A less bright theme for the Refind Boot Manager
 
 ![Preview](preview.jpg)
 
-Large icons for 50+ distros are included. There are additional, even more minimalist icons for some distros that can be paired with a Btrfs snapshot.
+Large icons for 60+ distros are included. There are additional, even more minimalist icons for some distros that can be paired with a Btrfs snapshot.
 
 ![Icon Preview](icons.jpg)
 
@@ -27,10 +27,11 @@ Then add `include themes/RONBM/theme.conf` at the end of /boot/EFI/refind/refind
 
 Open /RONBM/theme.conf and follow directions to edit:
 
-* Show/hide label text (shown by default, this is the text in the preview)
-* Show/hide hints (hidden by default, additional text at the bottom of the screen)
+* Show/hide label text (shown by default, this is the text in the preview that describes the highlighted icon)
+* Show/hide hints (hidden by default, additional instructive text at the bottom of the screen)
+* Show/hide badges (hidden by default, small additional icons mark images as internal storage/external/optical/net)
 * Icon size (256px default size relatively large for refind, but not very big on a HiDPI monitor)
-* Maximum number of icons shown (default 7 should fit like the preview on a 1080p monitor)
+* Maximum number of icons shown (default 7 should fit like the preview on a 1920 pixel wide monitor)
 * Timeout before automatic boot
 * Indicator style (there are 8 options of indicator for both large and small icons)
 
@@ -41,6 +42,8 @@ Open /RONBM/theme.conf and follow directions to edit:
 If the specific icon isn't automatically applied for a distro, the easiest solution is just to rename the correct one to os_linux.png or os_unknown.png. 
 
 More extensive fixes can be done by adding a boot stanza to /boot/EFI/refind/refind.conf
+
+Entries can be hidden in Refind by pressing the 'delete' key.
 
 **Example**
 >
