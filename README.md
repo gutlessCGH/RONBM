@@ -41,6 +41,8 @@ Open /RONBM/theme.conf and follow directions to edit:
 
 If the specific icon isn't automatically applied for a distro, the easiest solution is just to rename the correct one to os_linux.png or os_unknown.png. 
 
+The partition of the install can be renamed to match the distro/icon or vice versa.
+
 More extensive fixes can be done by adding a boot stanza to /boot/EFI/refind/refind.conf
 
 **Example**
