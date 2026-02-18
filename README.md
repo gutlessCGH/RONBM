@@ -37,6 +37,8 @@ Open /RONBM/theme.conf and follow directions to edit:
 
 ![Indicators Preview](indicators.jpg)
 
+The 'color_icons' folder contains darkened icons with slightly muted colors. If that's your preference, copy it into the icons folder to overwrite the monochrome icons. 
+
 ### Setting Custom Icons
 
 If the specific icon isn't automatically applied for a distro, the easiest solution is just to rename the correct one to os_linux.png or os_unknown.png. 
