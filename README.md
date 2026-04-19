@@ -1,10 +1,10 @@
-# Refind OLED No Blind Me
+# rEFInd OLED No Blind Me
 
-A less bright theme for the Refind Boot Manager
+A less bright theme for the rEFInd Boot Manager
 
 ![Preview](preview.jpg)
 
-Large icons for 60+ distros are included. There are additional, even more minimalist icons for some distros that can be paired with a Btrfs snapshot.
+Large icons for 60+ distros are included. There are additional, even more minimalist icons for some distros that can be paired with a refind-btrfs snapshot.
 
 ![Icon Preview](icons.jpg)
 
@@ -15,7 +15,7 @@ Copy the theme folder to a `themes` directory inside the refind EFI directory (u
 **Example**
 >                                               
 	sudo mkdir /boot/EFI/refind/themes                        (ignore command or error if directory exists)
-	sudo cp -r ./RONBM /boot/EFI/refind/themes/RONBM		  (right click to open terminal in downloads folder)
+	sudo cp -r ./RONBM /boot/EFI/refind/themes/				  (right click to open terminal in downloads folder)
 
 Then add `include themes/RONBM/theme.conf` at the end of /boot/EFI/refind/refind.conf
 >
@@ -41,11 +41,9 @@ The 'color_icons' folder contains darkened icons with slightly muted colors. If 
 
 ### Setting Custom Icons
 
-If the specific icon isn't automatically applied for a distro, the easiest solution is just to rename the correct one to os_linux.png or os_unknown.png. 
+If the specific icon isn't automatically applied for a distro, refer to the [rEFInd documentation](https://www.rodsbooks.com/refind/configfile.html) for the seven different ways icons can be set for auto-detected boot loaders.
 
-The partition of the install can be renamed to match the distro/icon or vice versa.
-
-More extensive fixes can be done by adding a boot stanza to /boot/EFI/refind/refind.conf
+The icon can also be set with a fixed boot stanza in '/boot/EFI/refind/refind.conf'
 
 **Example**
 >
@@ -59,4 +57,11 @@ More extensive fixes can be done by adding a boot stanza to /boot/EFI/refind/ref
     
 Boot options may be found in refind_linux.conf (sudo nano /boot/refind_linux.conf).   After booting into an OS copy the long string in quotes after "Boot with standard options"
 
-Entries can be hidden in Refind by pressing the 'delete' key.
+### Setting rEFInd-btfrs Custom Icon
+
+Icons with the Btfrs logo and monochrome versions of distro logos are included for refind-btfrs snapshots.  To set one as a custom icon edit '/etc/refind-btfrs.conf'
+>
+	
+	[boot-stanza-generation.icon]
+	mode = "custom" 
+	path = "themes/RONBM/icons/os_arch_ss.png"
