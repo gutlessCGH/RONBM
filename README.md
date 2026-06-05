@@ -30,7 +30,7 @@ Open /RONBM/theme.conf and follow directions to edit:
 * Show/hide label text (shown by default, this is the text in the preview that describes the highlighted icon)
 * Show/hide hints (hidden by default, additional instructive text at the bottom of the screen)
 * Show/hide badges (hidden by default, small additional icons mark images as internal storage/external/optical/net)
-* Icon size (256px default size relatively large for refind, but not very big on a HiDPI monitor)
+* Icon size (256px default size relatively large for rEFInd, but not very big on a HiDPI monitor)
 * Maximum number of icons shown (default 7 should fit like the preview on a 1920 pixel wide monitor)
 * Timeout before automatic boot
 * Indicator style (there are 8 options of indicator for both large and small icons)
@@ -57,9 +57,9 @@ The icon can also be set with a fixed boot stanza in '/boot/EFI/refind/refind.co
     
 Boot options may be found in refind_linux.conf (sudo nano /boot/refind_linux.conf).   After booting into an OS copy the long string in quotes after "Boot with standard options"
 
-### Setting rEFInd-btfrs Custom Icon
+### Setting rEFInd-btrfs Custom Icon
 
-Icons with the Btfrs logo and monochrome versions of distro logos are included for refind-btfrs snapshots.  To set one as a custom icon edit '/etc/refind-btfrs.conf'
+Icons with the Btfrs logo and monochrome versions of distro logos are included for refind-btrfs snapshots.  To set one as a custom icon edit '/etc/refind-btrfs.conf'
 >
 	
 	[boot-stanza-generation.icon]
